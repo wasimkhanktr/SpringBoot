@@ -32,7 +32,7 @@ public class Project4JdbcCrudApplication implements CommandLineRunner
 //		else
 //			System.err.println("User inserting failled..");
 		
-//		---------------------jdbc update--------------------
+//		---------------------jdbc update 1--------------------
 		
 //		User user2=new User("Akram","wasim@gmail.com","Male","Delhi");
 //		boolean status = userDao.updateUser(user2);
@@ -40,6 +40,16 @@ public class Project4JdbcCrudApplication implements CommandLineRunner
 //			System.out.println("user update successfully..");
 //		else
 //			System.err.println("User update failled..");
+		
+//		---------------------jdbc update 2--------------------
+		
+		User user=userDao.getUserByEmail("sarfraz@gmail.com");
+		user.setCity("Delhi");
+		boolean status = userDao.updateUser(user);
+		if(status)
+			System.out.println("user update successfully..");
+		else
+			System.err.println("User update failled..");
 		
 //		---------------DELETE JDBC---------------------
 //		boolean status = userDao.deleteUserByEmail("wasim@gmail.com");
@@ -57,20 +67,20 @@ public class Project4JdbcCrudApplication implements CommandLineRunner
 //		System.out.println("City :"+user.getCity());
 		
 //		------------------------seletc one user---------------------
-		List<User> list = userDao.allUserDetail();
-		
-		System.out.println("All User Information : ");
-		
-		for(User user : list)
-		{	
-			System.out.println("Id : "+user.getId());
-			System.out.println("Name :"+user.getName());
-			System.out.println("Email :"+user.getEmail());
-			System.out.println("Gender :"+user.getGender());
-			System.out.println("City :"+user.getCity());
-		}
-
-		
+//		List<User> list = userDao.allUserDetail();
+//		
+//		System.out.println("All User Information : ");
+//		
+//		for(User user : list)
+//		{	
+//			System.out.println("Id : "+user.getId());
+//			System.out.println("Name :"+user.getName());
+//			System.out.println("Email :"+user.getEmail());
+//			System.out.println("Gender :"+user.getGender());
+//			System.out.println("City :"+user.getCity());
+//		}
+//
+//		
 	}
 
 }
