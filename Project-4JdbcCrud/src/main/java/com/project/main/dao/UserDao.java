@@ -33,4 +33,26 @@ public class UserDao {
         
         return status;
     }
+    
+    public boolean updateUser(User user) {
+        boolean status = false;
+        
+        try {
+           
+            String sql = "UPDATE USER set name=?, gender=?, city=? where email = ?";
+            int count = jdbcTemplate.update(sql, user.getName(), user.getGender(), user.getCity(),user.getEmail());
+            
+            if (count>0) {
+                status = true;
+            } else {
+                status = false;
+            }
+            
+        } catch (Exception e) {
+            status = false;
+            e.printStackTrace();
+        }
+        
+        return status;
+    }
 }

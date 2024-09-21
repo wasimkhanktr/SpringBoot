@@ -21,13 +21,24 @@ public class Project4JdbcCrudApplication implements CommandLineRunner
 	@Override
 	public void run(String... args) throws Exception {
 		
-		User user1=new User("Wasim","wasim@gmail.com","male","Katihar");
+//		----------------------jdbc insertion---------------------
+//		User user1=new User("Wasim","wasim@gmail.com","Male","Katihar");
+//		
+//		boolean status = userDao.insertUser(user1);
+//		if(status)
+//			System.out.println("user inserted successfully..");
+//		else
+//			System.err.println("User inserting failled..");
 		
-		boolean status = userDao.insertUser(user1);
+//		---------------------jdbc update--------------------
+		
+		User user2=new User("Akram","wasim@gmail.com","Male","Delhi");
+		boolean status = userDao.updateUser(user2);
 		if(status)
-			System.out.println("user inserted successfully..");
+			System.out.println("user update successfully..");
 		else
-			System.err.println("User inserting failled..");
+			System.err.println("User update failled..");
+		
 	}
 
 }
