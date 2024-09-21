@@ -32,12 +32,19 @@ public class Project4JdbcCrudApplication implements CommandLineRunner
 		
 //		---------------------jdbc update--------------------
 		
-		User user2=new User("Akram","wasim@gmail.com","Male","Delhi");
-		boolean status = userDao.updateUser(user2);
+//		User user2=new User("Akram","wasim@gmail.com","Male","Delhi");
+//		boolean status = userDao.updateUser(user2);
+//		if(status)
+//			System.out.println("user update successfully..");
+//		else
+//			System.err.println("User update failled..");
+		
+//		---------------DELETE JDBC---------------------
+		boolean status = userDao.deleteUserByEmail("wasim@gmail.com");
 		if(status)
-			System.out.println("user update successfully..");
+			System.out.println("user deletion successfully..");
 		else
-			System.err.println("User update failled..");
+			System.err.println("User deletion failled..");
 		
 	}
 

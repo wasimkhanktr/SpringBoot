@@ -1,7 +1,11 @@
 package com.project.main.dao;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import com.project.main.entities.User;
@@ -55,4 +59,27 @@ public class UserDao {
         
         return status;
     }
+    
+    public boolean deleteUserByEmail(String email) {
+        boolean status = false;
+        
+        try {
+           
+            String sql = "DELETE FROM USER where email = ?";
+            int count = jdbcTemplate.update(sql,email);
+            
+            if (count>0) {
+                status = true;
+            } else {
+                status = false;
+            }
+            
+        } catch (Exception e) {
+            status = false;
+            e.printStackTrace();
+        }
+        
+        return status;
+    }
+
 }

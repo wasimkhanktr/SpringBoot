@@ -30,7 +30,6 @@ public class User
 	public void setCity(String city) {
 		this.city = city;
 	}
-	
 	public User(String name, String email, String gender, String city) {
 		super();
 		this.name = name;
@@ -38,6 +37,8 @@ public class User
 		this.gender = gender;
 		this.city = city;
 	}
+	
+	public User() {}
 	
 
 }
