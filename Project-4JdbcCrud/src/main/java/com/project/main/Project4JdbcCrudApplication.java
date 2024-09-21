@@ -1,5 +1,7 @@
 package com.project.main;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -47,12 +49,27 @@ public class Project4JdbcCrudApplication implements CommandLineRunner
 //			System.err.println("User deletion failled..");
 		
 //		------------------------seletc one user---------------------
-		User user = userDao.getUserByemail("wasim@gmail.com");
-		System.out.println("User Information : ");
-		System.out.println("Name :"+user.getName());
-		System.out.println("Email :"+user.getEmail());
-		System.out.println("Gender :"+user.getGender());
-		System.out.println("City :"+user.getCity());
+//		User user = userDao.getUserByemail("wasim@gmail.com");
+//		System.out.println("User Information : ");
+//		System.out.println("Name :"+user.getName());
+//		System.out.println("Email :"+user.getEmail());
+//		System.out.println("Gender :"+user.getGender());
+//		System.out.println("City :"+user.getCity());
+		
+//		------------------------seletc one user---------------------
+		List<User> list = userDao.allUserDetail();
+		
+		System.out.println("All User Information : ");
+		
+		for(User user : list)
+		{	
+			System.out.println("Id : "+user.getId());
+			System.out.println("Name :"+user.getName());
+			System.out.println("Email :"+user.getEmail());
+			System.out.println("Gender :"+user.getGender());
+			System.out.println("City :"+user.getCity());
+		}
+
 		
 	}
 
