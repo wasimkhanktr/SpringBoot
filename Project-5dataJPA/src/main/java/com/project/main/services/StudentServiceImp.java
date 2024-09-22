@@ -30,8 +30,8 @@ public class StudentServiceImp implements StudentServices {
 
 	@Override
 	public List<Student> getAllStudentDetails() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return studentRepository.findAll();
 	}
 
 }
