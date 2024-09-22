@@ -10,5 +10,6 @@ public interface StudentServices
 	public List<Student> getAllStudentDetails();
 	public Student getStudentdetail(Long id);
 	public boolean updateStudentdetails(long id,float marks);
+	public boolean deleteStudentdetails(long id);
 
 }

@@ -51,11 +51,19 @@ public class Project5dataJpaApplication {
 //		System.out.println("Roll No. : " + std.getRollNo());
 //		System.out.println("Marsk : " + std.getMarks());
 		
-//		--------------update marks------------------
-		boolean status = stdsevice.updateStudentdetails(1l, 98.7f);
+////		--------------update marks------------------
+//		boolean status = stdsevice.updateStudentdetails(1l, 98.7f);
+//		
+//		if(status)
+//			System.out.println("Updeted successfully...");
+//		else
+//			System.out.println("Updetion failled...");
+		
+//		--------------delete user------------------
+		boolean status = stdsevice.deleteStudentdetails(2l);
 		
 		if(status)
-			System.out.println("Updeted successfully...");
+			System.out.println("User deleted successfully...");
 		else
 			System.out.println("Updetion failled...");
 			

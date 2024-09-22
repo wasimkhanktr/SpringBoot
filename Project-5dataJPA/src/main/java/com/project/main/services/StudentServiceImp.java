@@ -58,4 +58,19 @@ public class StudentServiceImp implements StudentServices {
 			return false;
 	}
 
+	@Override
+	public boolean deleteStudentdetails(long id) {
+		boolean status=false;
+		try {
+			studentRepository.deleteById(id);
+			status=true;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			status=false;
+		}
+		
+		return status;
+	}
+
 }

@@ -593,3 +593,24 @@
 2024-09-22 18:41:53,053 [Worker-94: Launching Project-5dataJPA - Project5dataJpaApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-09-22 18:41:53,214 [Worker-94: Launching Project-5dataJPA - Project5dataJpaApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-09-22 18:41:53,219 [Worker-94: Launching Project-5dataJPA - Project5dataJpaApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\SpringBoot\Project-5dataJPA\src\test\resources
+2024-09-22 18:46:25,726 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-22 18:46:25,790 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-22 18:46:25,800 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\SpringBoot\Project-5dataJPA\src\test\resources
+2024-09-22 18:46:39,830 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-22 18:46:39,849 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-22 18:46:39,857 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\SpringBoot\Project-5dataJPA\src\test\resources
+2024-09-22 18:52:33,610 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-22 18:52:33,902 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-22 18:52:33,917 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\SpringBoot\Project-5dataJPA\src\test\resources
+2024-09-22 18:52:47,110 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-22 18:52:47,190 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-22 18:52:47,242 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\SpringBoot\Project-5dataJPA\src\test\resources
+2024-09-22 18:57:05,336 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-22 18:57:05,459 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-22 18:57:05,479 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\SpringBoot\Project-5dataJPA\src\test\resources
+2024-09-22 18:58:24,145 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-22 18:58:24,275 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-22 18:58:24,286 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\SpringBoot\Project-5dataJPA\src\test\resources
+2024-09-22 18:59:20,034 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-22 18:59:20,081 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-22 18:59:20,088 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\SpringBoot\Project-5dataJPA\src\test\resources
