@@ -13,10 +13,10 @@ import com.project.main.services.StudentServices;
 @SpringBootApplication
 public class Project5dataJpaApplication {
 
-    public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(Project5dataJpaApplication.class, args);
-        StudentServices stdsevice = context.getBean(StudentServiceImp.class);
-        
+	public static void main(String[] args) {
+		ApplicationContext context = SpringApplication.run(Project5dataJpaApplication.class, args);
+		StudentServices stdsevice = context.getBean(StudentServiceImp.class);
+
 //        ----------------insert---------operation-----------
 //        
 //        Student std = new Student();
@@ -30,18 +30,27 @@ public class Project5dataJpaApplication {
 //            System.out.println("Student inserted successfully");
 //        else
 //            System.out.println("Student insertion failed");
-        
+
 //        ---------------display--all--details-------------------
-        List<Student> list = stdsevice.getAllStudentDetails();
-        
-        for(Student std:list)
-        {
-        	System.out.println("id : " + std.getId());
-        	System.out.println("Name : "+std.getName());
-        	System.out.println("Roll No. : "+std.getRollNo());
-        	System.out.println("Marsk : "+std.getMarks());
-        	System.out.println("-------------------------");
-        }
-    }
+//        List<Student> list = stdsevice.getAllStudentDetails();
+//        
+//        for(Student std:list)
+//        {
+//        	System.out.println("id : " + std.getId());
+//        	System.out.println("Name : "+std.getName());
+//        	System.out.println("Roll No. : "+std.getRollNo());
+//        	System.out.println("Marsk : "+std.getMarks());
+//        	System.out.println("-------------------------");
+//        }
+
+//        ---------------display--all--details-------------------
+		Student std = stdsevice.getStudentdetail(1l);
+
+		System.out.println("id : " + std.getId());
+		System.out.println("Name : " + std.getName());
+		System.out.println("Roll No. : " + std.getRollNo());
+		System.out.println("Marsk : " + std.getMarks());
+
+	}
 
 }

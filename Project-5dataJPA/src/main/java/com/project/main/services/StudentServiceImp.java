@@ -1,6 +1,7 @@
 package com.project.main.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,6 +33,16 @@ public class StudentServiceImp implements StudentServices {
 	public List<Student> getAllStudentDetails() {
 		
 		return studentRepository.findAll();
+	}
+
+	@Override
+	public Student getStudentdetail(Long id) {
+		
+		Optional<Student> optional = studentRepository.findById(id);
+		if(optional.isPresent())
+			return optional.get();
+		else
+			return null;
 	}
 
 }
