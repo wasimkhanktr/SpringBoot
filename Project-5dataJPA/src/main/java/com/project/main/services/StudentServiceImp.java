@@ -45,4 +45,17 @@ public class StudentServiceImp implements StudentServices {
 			return null;
 	}
 
+	@Override
+	public boolean updateStudentdetails(long id, float marks) {
+		Student std = getStudentdetail(id);
+		if(std != null)
+		{
+			std.setMarks(marks);
+			studentRepository.save(std);
+			return true;
+		}
+		else
+			return false;
+	}
+
 }

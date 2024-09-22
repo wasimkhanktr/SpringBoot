@@ -44,12 +44,21 @@ public class Project5dataJpaApplication {
 //        }
 
 //        ---------------display--all--details-------------------
-		Student std = stdsevice.getStudentdetail(1l);
-
-		System.out.println("id : " + std.getId());
-		System.out.println("Name : " + std.getName());
-		System.out.println("Roll No. : " + std.getRollNo());
-		System.out.println("Marsk : " + std.getMarks());
+//		Student std = stdsevice.getStudentdetail(1l);
+//
+//		System.out.println("id : " + std.getId());
+//		System.out.println("Name : " + std.getName());
+//		System.out.println("Roll No. : " + std.getRollNo());
+//		System.out.println("Marsk : " + std.getMarks());
+		
+//		--------------update marks------------------
+		boolean status = stdsevice.updateStudentdetails(1l, 98.7f);
+		
+		if(status)
+			System.out.println("Updeted successfully...");
+		else
+			System.out.println("Updetion failled...");
+			
 
 	}
 
