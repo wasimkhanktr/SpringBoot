@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="../css/register.css"> <!-- Link to external CSS if needed -->
 </head>
 <body>
-    <form action="submit_form.php" method="post">
+	
+	<c:if test=${not empty successMessege}>
+		<h4 style="color:green"> ${successMessege} </h4>
+		
+	</c:if>
+
+	<c:if test=${not empty errMessege}>
+		<h4 style="color:red"> ${errMessege} </h4>
+		
+	</c:if>
+		
+	
+    <form action="regForm" method="post">
     	<h3>Register Here</h3>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required><br>
